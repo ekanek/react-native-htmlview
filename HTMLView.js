@@ -114,7 +114,7 @@ class HtmlView extends PureComponent {
       return (
         <RootComponent
           {...this.props.rootComponentProps}
-          style={style}
+           style={{...style, overflow:"hidden"}}
         >
           {element}
         </RootComponent>
@@ -123,7 +123,7 @@ class HtmlView extends PureComponent {
     return (
       <RootComponent
         {...this.props.rootComponentProps}
-        style={style}
+         style={{...style, overflow:"hidden"}}
       />
     );
   }
